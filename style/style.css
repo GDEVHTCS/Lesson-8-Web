@@ -64,6 +64,7 @@ body{
     font-size: 16px;
     line-height: 24px;
     transition: 0.2s;
+    border:  0.2px solid black;
 }
 .action-btn:hover{
     transform: scale(1.1);
@@ -75,6 +76,7 @@ body{
     color: #fff;
 }
 .action-main-btn{
+    border:0.2px solid black;
     position: absolute;
     width: 100px;
     height: 48px;
@@ -150,9 +152,10 @@ body{
 .features-background{
     background-color:#F3F3F3;
     width: 100%;
-    height: 22vh;
+    height: 30vh;
     position: absolute;
     top: 90vh;
+    padding: 25px;
 }
  
 .features-div{
@@ -185,58 +188,112 @@ body{
     top: 10px;
     left: 50px;
 }
-.black-background-photo{
-    background-color: #000;
+.black-background{
     width: 100%;
-    height: 80vh;
+    height: 700px;
+    background-color: #000;
+    top: 120vh;
     position: relative;
-    z-index: -50;
-    top: 100vh;
-    
+    overflow: hidden;
 }
-
-.items-photo{
-    width: 550px;
-    height: 470px;
-    left: 20vh;
-    top: 250px;
-    position: absolute;
-    z-index: -50;
-}
-.black-background-texts-div{
-    position: absolute;
-    top: 200px;
-    left: 100vh;
-    top: 300px;
-    transform: scale(1.1);
-}
-.b-b-title{
-    color: white;
-    width: 500px;
-    font-size: 24px;
-    line-height: 24px;
+.black-background-top-text{
+    font-family: "Inter", sans-serif;
     font-weight: 900;
-    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    width: 500px;
 }
-.b-b-texts-top{
-    color: #9c9c9c;
-    font-family: "Inter", sans-serif;
+.black-background-items{
+    display: flex;
+    left: 10%;
+    top: 15%;
+    position: relative;
+    column-gap: 250px;
+}
+.black-background-texts{
+    transform: scale(1.2);
+    margin-top: 5%;
+}
+.items-photo{
+    width: 600px;
+    height: 500px;
+}
+.dest-down-top{
     font-weight: 400;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    width: 400px;
-    top: 70px;
-    position: absolute;
+    color: #ccc;
+    width: 500px;
+    margin-top: 10px;
 }
-.b-b-text-div{
-    margin-top: 95px;
-}
-.b-b-text{
-    color: #9c9c9c;
-    font-family: "Inter", sans-serif;
+.block-texts{
+    color: #ccc;
     font-weight: 400;
+    font-family: "Inter", sans-serif;
+    list-style: 24px;
+    vertical-align: middle;
     font-size: 16px;
-    line-height: 24px;
-    width: 400px;
+    letter-spacing: 0.1px;
     margin-top: 20px;
+}
+.block-texts-div{
+    margin-top: 20px;
+}
+.background-photo-div{
+    position: relative;
+    top: 120vh;
+    width: 100%;
+}
+.background{
+    width: 100%;
+    object-fit: cover;
+    z-index: -500;
+    height: 600px;
+    background-position: center;
+}
+.background-texts{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.tagline{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #fff; 
+}
+.background-h2-text{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    line-height: 48px;
+    width: 550px;
+}
+.white-action-btn{
+    width: 100px;
+    height: 48px;
+    border-radius: 32px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.2s;
+    border:  0.2px solid rgb(255, 255, 255); 
+}
+ 
+.white-action-btn:hover{
+    background-color: #000;
+    color: #fff;
+    border: 0.2px solid #000;
+    transform: scale(1.1);
 }
